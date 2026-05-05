@@ -32,7 +32,7 @@ console.dir(p);
 // Shows as object type HTMLParagraphElement
 
 // Example 7 -  getElementsByTagName
-console.log("\nSECTION 7 - getElementByTagName");
+console.log("\nSECTION 7 - getElementsByTagName");
 
 //To select the input elements
 const inputE = document.getElementsByTagName("input");
@@ -53,6 +53,25 @@ console.dir(listE);
 
 // Example 8 -  getElementByClassName
 console.log("\nSECTION 8 - getElementByClassName");
+
+//To select the special class elements
+const specialC = document.getElementsByClassName("special");
+console.dir(specialC);
+// Shows as a collection of 4 objects
+// Shows as type HTMLCollection
+for (let special of specialC) {
+  console.log(special);
+}
+
+//To select the special class elements within the ul element
+const ul = document.getElementsByTagName("ul");
+const specialCU = ul.getElementsByClassName("special");
+console.dir(specialCU);
+// Shows as a collection of 2 objects
+// Shows as type HTMLCollection
+for (let special of specialCU) {
+  console.log(special);
+}
 
 // Example 9 -  querySelector & bquerySelectorAll
 console.log("\nSECTION 9 - querySelector & bquerySelectorAll");
