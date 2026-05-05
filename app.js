@@ -31,8 +31,25 @@ const p = document.getElementById("main");
 console.dir(p);
 // Shows as object type HTMLParagraphElement
 
-// Example 7 -  getElementByTagName
+// Example 7 -  getElementsByTagName
 console.log("\nSECTION 7 - getElementByTagName");
+
+//To select the input elements
+const inputE = document.getElementsByTagName("input");
+console.dir(inputE);
+// Shows as a collection of 3 objects
+// Shows as type HTMLCollection
+for (let input of inputE) {
+  console.log(input);
+}
+const arr = [...inputE];
+console.log(arr);
+
+//To select the li elements
+const listE = document.getElementsByTagName("li");
+console.dir(listE);
+// Shows as a collection of 6 objects
+// Shows as type HTMLCollection
 
 // Example 8 -  getElementByClassName
 console.log("\nSECTION 8 - getElementByClassName");
