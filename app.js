@@ -64,14 +64,40 @@ for (let special of specialC) {
 }
 
 //To select the special class elements within the ul element
-const ul = document.getElementsByTagName("ul");
+const ul = document.getElementsByTagName("ul")[0];
 const specialCU = ul.getElementsByClassName("special");
 console.dir(specialCU);
 // Shows as a collection of 2 objects
 // Shows as type HTMLCollection
 for (let special of specialCU) {
-  console.log(special);
+  console.dir(special);
 }
 
 // Example 9 -  querySelector & bquerySelectorAll
 console.log("\nSECTION 9 - querySelector & bquerySelectorAll");
+
+// Select the first h1 element (Similar to getElementsByTagName)
+const headerS = document.querySelector("h1");
+console.dir(headerS);
+// Shows as object type HTMLHeadingElement
+
+// Select the bear-photo id
+const bearQS = document.querySelector("#bear-photo");
+console.dir(bearQS);
+// Shows as object type HTMLImageElement
+
+// Select the li with class special within the ul and section tags
+const liS = document.querySelector("section ul li.special");
+console.dir(liS);
+// Shows as object type HTMLLIElement
+
+// Select the password input field
+const pwI = document.querySelector('input[type="password"]');
+console.dir(pwI);
+// Shows as object type HTMLInputElement
+
+//To select the class special elements
+const specialQSA = document.querySelectorAll(".special");
+console.dir(specialQSA);
+// Shows as a NodeList - collection of 4 objects
+// Each of the 4 shows as different object types
