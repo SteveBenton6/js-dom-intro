@@ -14,6 +14,17 @@ console.log("\nSECTION 3 - Taste of the DOM");
 console.log("\nSECTION 4 - Another Fun DOM Example");
 // No Code
 
+const myImage = document.createElement("img");
+myImage.src =
+  "https://images.unsplash.com/photo-1548135160-2ddd99526762?ixlib=rb-1.2.1&1xid=eyJhcHBfawQiOjEyMd9&auto=format&fit=crop&w=1601&q=80";
+document.body.append(myImage);
+myImage.style.width = "200px";
+setInterval(() => {
+  const x = Math.floor(document.body.clientWidth * Math.random());
+  const y = Math.floor(document.body.clientHeight * Math.random());
+  myImage.style.transform = `translate(${x}px, ${y}px)`;
+}, 2000);
+
 // Example 5 -  The Document Object
 console.log("\nSECTION 5 - The Document Object");
 // No Code
