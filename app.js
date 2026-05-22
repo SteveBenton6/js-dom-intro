@@ -94,7 +94,7 @@ for (let special of specialCU) {
   console.dir(special);
 }
 
-// Example 9 -  querySelector & bquerySelectorAll
+// Example 9 -  querySelector & querySelectorAll
 console.log("\nSECTION 9 - querySelector & bquerySelectorAll");
 
 // Select the first h1 element (Similar to getElementsByTagName)
