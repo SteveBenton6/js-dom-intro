@@ -27,7 +27,8 @@ setInterval(() => {
 
 // Example 5 -  The Document Object
 console.log("\nSECTION 5 - The Document Object");
-// No Code
+
+console.dir(document);
 
 // Example 6 -  getElementById
 console.log("\nSECTION 6 - getElementById");
