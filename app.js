@@ -57,14 +57,18 @@ for (let input of inputE) {
 const arr = [...inputE];
 console.log(arr);
 
+// To show first input Object
+console.log("First input element: ");
+console.log(inputE[0]);
+
 //To select the li elements
 const listE = document.getElementsByTagName("li");
 console.dir(listE);
 // Shows as a collection of 6 objects
 // Shows as type HTMLCollection
 
-// Example 8 -  getElementByClassName
-console.log("\nSECTION 8 - getElementByClassName");
+// Example 8 -  getElementsByClassName
+console.log("\nSECTION 8 - getElementsByClassName");
 
 //To select the special class elements
 const specialC = document.getElementsByClassName("special");
