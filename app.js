@@ -61,6 +61,11 @@ console.log(arr);
 console.log("First input element: ");
 console.log(inputE[0]);
 
+// To show values of items (put code in console)
+for (let input of inputE) {
+  console.log(input.value);
+}
+
 //To select the li elements
 const listE = document.getElementsByTagName("li");
 console.dir(listE);
